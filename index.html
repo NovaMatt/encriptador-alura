@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="./recursos/Logo.png" />
+    </header>
+
+    <main>
+      <div class="input">
+        <textarea name="" id="encriptarTexto" placeholder="Ingrese el texto aqui" autofocus></textarea>
+        <p>
+          <span><img id="warningIcon" src="./recursos/warningIcon.svg" /></span> Solo letras minúsculas y sin acentos
+        </p>
+        <div class="botones">
+          <button id="encriptar" onclick="funcionEcriptar()">Encriptar</button>
+          <button id="desencriptar" onclick="funcionDesencriptar()">Desencriptar</button>
+        </div>
+      </div>
+      <div class="output">
+        <img id="muñeco" src="./recursos/Muñeco.png" />
+        <h2 id="sinMensaje">Ningún mensaje fue encontrado</h2>
+        <p id="texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+        <button id="botonCopiar" onclick="funcionCopiar()">Copiar</button>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
